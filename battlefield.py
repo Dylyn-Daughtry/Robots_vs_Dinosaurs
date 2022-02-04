@@ -36,7 +36,8 @@ class Battlefield:
         current_robot = int(input()) - 1
         print()
         self.select_robot_weapon()  
-        self.fleet.robots[current_robot].assign_weapon(self.arsenal.weapons[int(input()) - 1])   
+        current_weapon = int(input()) - 1
+        self.fleet.robots[current_robot].assign_weapon(self.arsenal.weapons[current_weapon])   
         print()
         # self.show_dino_options()
         # current_dino = int(input())
@@ -51,7 +52,7 @@ class Battlefield:
                 self.dino_turn(self.fleet.robots[current_robot], self.herd.dinosaurs[current_dino])
                 if self.fleet.robots[current_robot].health <= 0:
                     self.fleet.robots.remove(self.fleet.robots[current_robot])
-                    # self.arsenal.weapons.remove(self.fleet.robots[current_robot].weapon)
+                    self.arsenal.weapons.remove(self.arsenal.weapons[current_weapon])
                     if len(self.fleet.robots) > 0:
                         print()
                         self.select_robot()
