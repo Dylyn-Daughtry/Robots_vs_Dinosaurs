@@ -8,9 +8,9 @@ class Arsenal:
 
     def create_arsenal(self):  
         weapon_one = Weapon("Rusty Knuckles", 14)
-        weapon_two = Weapon("Shock Cannon", 25)
-        weapon_three = Weapon("Flame thrower", 20)
-        weapon_four = Weapon("Rocket Fist", 18)
+        weapon_two = Weapon("a Shock Cannon", 25)
+        weapon_three = Weapon("a Flame thrower", 20)
+        weapon_four = Weapon("Dual Rocket Fist", 18)
         self.weapons.append(weapon_one)
         self.weapons.append(weapon_two)
         self.weapons.append(weapon_three)

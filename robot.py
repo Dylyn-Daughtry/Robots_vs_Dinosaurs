@@ -16,5 +16,5 @@ class Robot:
         
     def assign_weapon(self, weapon_selection):
         self.weapon = weapon_selection
-        print(f'{self.name} has equipped a {self.weapon.name}' )
+        print(f'{self.name} has equipped {self.weapon.name}' )
     
