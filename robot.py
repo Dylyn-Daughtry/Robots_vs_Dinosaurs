@@ -1,6 +1,3 @@
-from arsenal import Arsenal
-
-
 
 class Robot:
 
@@ -18,7 +15,6 @@ class Robot:
         print(f'{dinosaur.name} health is now {dinosaur.health}')
         
     def assign_weapon(self, weapon_selection):
-        # self.weapon = self.arsenal.weapons[weapon_selection]
         self.weapon = weapon_selection
         print(f'{self.name} has equipped a {self.weapon.name}' )
     
