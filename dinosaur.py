@@ -4,7 +4,7 @@ class Dinosaur:
     def __init__(self, name, attack_power):
         self.name = name
         self.attack_power = attack_power
-        self.health = 3
+        self.health = 50
     def __str__(self):
         return f'Dino name: {self.name} HP: {self.health} Attack Power: {self.attack_power}'
     

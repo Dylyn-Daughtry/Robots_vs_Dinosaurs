@@ -10,21 +10,31 @@ class Battlefield:
         self.arsenal = Arsenal()
     
     def run_game(self):
+        self.user_name = ''
+        self.obtain_name()
         self.display_welcome()
         #self.fleet.robots[0].attack(self.herd.dinosaurs[0]) # TESTED 
         self.battle()
         self.display_winners()
 
+    def obtain_name(self):
+        self.user_name = input('What is your name? ')
+        print(self.user_name)
+
     def display_welcome(self):
         print()
-        print('Welcome to the test arena')
+        print(f'Hello {self.user_name} You have been chosen to lead the Heavy\n' + 
+        ' Metal Coalition in combat against a unknown terrorist group that has\n' + 
+        ' been researching and developing gene manipulation and cloning capabilities.\n' +
+        ' Pick Carefully and choose well these creations must be stopped and destroyed.')
         print()
-        print('Team Heavy Metal:')
+        print()
+        print('Heavy Metal Coalition:')
         for robot in self.fleet.robots:
             print(robot)
         print()
         print()
-        print('Team Veloci-Fact-ors!:')
+        print('Escaped Experiments:')
         for dinosaur in self.herd.dinosaurs:
             print(dinosaur)
         print()

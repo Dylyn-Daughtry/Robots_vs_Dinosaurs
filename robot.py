@@ -3,7 +3,7 @@ class Robot:
 
     def __init__(self, name):
         self.name = name
-        self.health = 3
+        self.health = 50
         self.weapon = None
 
     def __str__(self):
