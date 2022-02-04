@@ -11,7 +11,7 @@ class Robot:
     
     def attack(self, dinosaur): # dino.health - self.weapon.attack_power   then use print statments to fill in the user what happend 
         dinosaur.health -= self.weapon.attack_power
-        print(f'{self.name} dealt {self.weapon.attack_power} to {dinosaur.name}')
+        print(f'{self.name} dealt {self.weapon.attack_power} damage to {dinosaur.name}')
         print(f'{dinosaur.name} health is now {dinosaur.health}')
         
     def assign_weapon(self, weapon_selection):
