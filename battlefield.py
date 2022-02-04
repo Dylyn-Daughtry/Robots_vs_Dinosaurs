@@ -1,3 +1,4 @@
+import time
 from fleet import Fleet
 from herd import Herd
 # from weapon import Weapon
@@ -23,7 +24,7 @@ class Battlefield:
 
     def display_welcome(self):
         print()
-        print(f'Hello {self.user_name} You have been chosen to lead the Heavy\n' + 
+        print(f'Captain {self.user_name} You have been chosen to lead the Heavy\n' + 
         ' Metal Coalition in combat against a unknown terrorist group that has\n' + 
         ' been researching and developing gene manipulation and cloning capabilities.\n' +
         ' Pick Carefully and choose well these creations must be stopped and destroyed.')
@@ -104,9 +105,13 @@ class Battlefield:
    
     def display_winners(self):
         if len(self.fleet.robots) == 0:
-            print('Dinos Win')
+            print('The Escaped Experiments have scrapped your team! Go hit the showers!')
         else:
-            print('Skynet')
+            print('Feb 07 2022....0912... ' +
+            'Cyberdyne Systems Operation artificial intelligence system initiating' +
+            'Skynet now online' +
+            'Skynet initiative status Active' +
+            'Begin operation JUDGEMENT DAY')
         print()
         print()
         print()    
