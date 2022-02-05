@@ -70,7 +70,8 @@ class Battlefield:
                         current_robot = int(input()) - 1
                         print()
                         self.select_robot_weapon()
-                        self.fleet.robots[current_robot].assign_weapon(self.arsenal.weapons[int(input()) - 1]) 
+                        current_weapon = int(input()) - 1
+                        self.fleet.robots[current_robot].assign_weapon(self.arsenal.weapons[current_weapon]) 
                         print()
            print()
             
@@ -108,10 +109,10 @@ class Battlefield:
             print('The Escaped Experiments have scrapped your team! Go hit the showers!')
         else:
             print('Feb 07 2022....0912... ' +
-            'Cyberdyne Systems Operation artificial intelligence system initiating' +
-            'Skynet now online' +
-            'Skynet initiative status Active' +
-            'Begin operation JUDGEMENT DAY')
+            'Cyberdyne Systems Operation artificial intelligence system initiating\n' +
+            'Skynet now online\n' +
+            'Skynet initiative status Active\n' +
+            'Begin operation JUDGEMENT DAY\n')
         print()
         print()
         print()    
